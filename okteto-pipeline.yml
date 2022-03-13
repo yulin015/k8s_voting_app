@@ -1,6 +1,5 @@
 icon: https://apps.okteto.com/movies/icon.png
 deploy:
-  - kubectl create namespace vote
   - kubectl create -f vote-deployment.yaml
   - kubectl create -f vote-service.yaml
   - kubectl create -f result-deployment.yaml
